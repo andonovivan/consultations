@@ -24,11 +24,7 @@
                 <a href="{{ route('students.edit', $student->id) }}" class="btn btn-warning">Edit</a>
             </td>
             <td>
-                <form method="post" action="{{ route('students.destroy', $student->id) }}">
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" class="btn btn-danger ml-0">Delete</button>
-                </form>
+                <button type="button" class="btn btn-danger ml-0 delete" value="{{$student->id}}" route_name="students">Delete</button>
             </td>
             <td></td>
         </tr>

@@ -1,4 +1,4 @@
-<table class="table table-striped table-hover">
+<table class="table table-striped table-hover subjects" id="subjects">
     <thead>
     <tr>
         <th scope="col">ID</th>
@@ -10,7 +10,7 @@
     </thead>
     <tbody>
     @foreach($subjects as $subject)
-        <tr>
+        <tr tr-id="{{$subject->id}}">
             <td>{{ $subject->id }}</td>
             <td>{{ $subject->name }}</td>
             <td>{{ $subject->semester }}</td>
@@ -18,11 +18,9 @@
                 <a href="{{ route('subjects.edit', $subject->id) }}" class="btn btn-warning">Edit</a>
             </td>
             <td>
-                <form method="post" action="{{ route('subjects.destroy', $subject->id) }}">
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" class="btn btn-danger ml-0">Delete</button>
-                </form>
+                <button type="button" class="btn btn-danger ml-0 delete" value="{{$subject->id}}" route_name="subjects">
+                    Delete
+                </button>
             </td>
             <td></td>
         </tr>
