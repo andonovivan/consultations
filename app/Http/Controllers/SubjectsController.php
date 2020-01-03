@@ -21,7 +21,9 @@ class SubjectsController extends Controller
      */
     public function index()
     {
-        return view('subjects.index', ['subjects' => Subject::all()]);
+        return view('subjects.index', [
+            'subjects' => Subject::paginate(10)
+        ]);
     }
 
     /**
@@ -49,7 +51,7 @@ class SubjectsController extends Controller
 
         Subject::create($validated);
 
-        return redirect(route('home', $this->source));
+        return redirect(route('subjects.index'));
     }
 
     /**
@@ -91,7 +93,7 @@ class SubjectsController extends Controller
 
         $subject->update($validated);
 
-        return redirect(route('home', $this->source));
+        return redirect(route('subjects.index'));
     }
 
     /**
@@ -103,6 +105,5 @@ class SubjectsController extends Controller
     public function destroy($id)
     {
         Subject::findOrFail($id)->delete();
-        return redirect(route('home', $this->source));
     }
 }

@@ -37006,8 +37006,6 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-__webpack_require__(/*! ./custom */ "./resources/js/custom.js");
-
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -37052,35 +37050,6 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
-
-/***/ }),
-
-/***/ "./resources/js/custom.js":
-/*!********************************!*\
-  !*** ./resources/js/custom.js ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-document.querySelector('.tab-content').addEventListener('click', function (e) {
-  if (e.target.classList.contains('delete')) {
-    var options = {
-      method: 'DELETE',
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    };
-    fetch('/api/' + e.target.getAttribute('route_name') + '/' + e.target.value, options).then(function (res) {
-      return res.json();
-    }).then(function (res) {
-      if (res === 1) {
-        e.target.parentNode.parentNode.remove();
-      }
-    })["catch"](function (e) {
-      return console.log(e);
-    });
-  }
-});
 
 /***/ }),
 

@@ -1,6 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
+    <div
+        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
+        <h1 class="h2">Subjects</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+            <a href="{{ route('subjects.index') }}" class="btn btn-outline-success">&larr; Back</a>
+        </div>
+    </div>
+
     <div class="card">
         <div class="card-header">
             Create New Subject
@@ -9,14 +17,14 @@
             <form method="post" action="{{ route('subjects.store') }}">
                 @csrf
                 <div class="form-group">
-                    <label for="first_name">Name</label>
+                    <label for="name">Name</label>
                     <input type="text"
                            class="form-control @error('name') is-invalid @enderror"
                            id="name"
                            name="name"
                            placeholder="Enter Name">
 
-                    @error('first_name')
+                    @error('name')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                 </div>
@@ -30,7 +38,7 @@
                            max="10"
                            placeholder="Enter Semester">
 
-                    @error('last_name')
+                    @error('semester')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                 </div>

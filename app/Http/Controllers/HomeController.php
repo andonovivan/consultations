@@ -11,6 +11,7 @@ class HomeController extends Controller
 {
     public function index($source = null)
     {
+        return view('layouts.app');
         return view('home', [
             'students' => Student::all(),
             'professors' => Professor::all(),

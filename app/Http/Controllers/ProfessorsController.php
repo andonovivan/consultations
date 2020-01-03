@@ -21,7 +21,9 @@ class ProfessorsController extends Controller
      */
     public function index()
     {
-        return view('professors.index', ['professors' => Professor::all()]);
+        return view('professors.index', [
+            'professors' => Professor::paginate(10)
+        ]);
     }
 
     /**
@@ -50,7 +52,7 @@ class ProfessorsController extends Controller
 
         Professor::create($validated);
 
-        return redirect(route('home', $this->source));
+        return redirect(route('professors.index'));
     }
 
     /**
@@ -100,7 +102,7 @@ class ProfessorsController extends Controller
 
         $professor->update($validated);
 
-        return redirect(route('home', $this->source));
+        return redirect(route('professors.index'));
     }
 
     /**
@@ -112,6 +114,5 @@ class ProfessorsController extends Controller
     public function destroy($id)
     {
         Professor::findOrFail($id)->delete();
-        return redirect(route('home', $this->source));
     }
 }

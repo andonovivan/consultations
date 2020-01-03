@@ -1,6 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
+    <div
+        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
+        <h1 class="h2">Professors</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+            <a href="{{ route('professors.index') }}" class="btn btn-outline-success">&larr; Back</a>
+        </div>
+    </div>
+
     <div class="card">
         <div class="card-header">
             Update Professor

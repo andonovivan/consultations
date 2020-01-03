@@ -13,7 +13,6 @@ use Illuminate\View\View;
 
 class StudentsController extends Controller
 {
-    protected $source = 'students';
 
     /**
      * Display a listing of the resource.
@@ -22,7 +21,9 @@ class StudentsController extends Controller
      */
     public function index()
     {
-        return view('students.index', ['students' => Student::all()]);
+        return view('students.index', [
+            'students' => Student::paginate(10)
+        ]);
     }
 
     /**
@@ -53,7 +54,7 @@ class StudentsController extends Controller
 
         Student::create($validated);
 
-        return redirect(route('home', $this->source));
+        return redirect(route('students.index'));
     }
 
     /**
@@ -75,7 +76,9 @@ class StudentsController extends Controller
      */
     public function edit($id)
     {
-        return view('students.edit', ['student' => Student::find($id)]);
+        return view('students.edit', [
+            'student' => Student::find($id)
+        ]);
     }
 
     /**
@@ -105,7 +108,7 @@ class StudentsController extends Controller
 
         $student->update($validated);
 
-        return redirect(route('home', $this->source));
+        return redirect(route('students.index'));
     }
 
     /**
@@ -117,6 +120,5 @@ class StudentsController extends Controller
     public function destroy($id)
     {
         Student::findOrFail($id)->delete();
-        return redirect(route('home', $this->source));
     }
 }
