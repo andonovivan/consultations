@@ -51,3 +51,6 @@ Route::put('/consultations/{id}/update', 'ConsultationsController@update')->name
 Route::delete('/consultations/{id}', 'ConsultationsController@destroy')->name('consultations.destroy');
 // End Consultations
 
+// Attendees
+Route::post('/attendees/{consultation_id}', 'AttendeesController@create')->name('attendees.create');
+// End Attendees

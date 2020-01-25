@@ -17,4 +17,9 @@ class Consultation extends Model
     {
         return $this->hasOne('App\Room', 'id', 'room_id');
     }
+
+    public function attendees()
+    {
+        return $this->hasMany('App\Attendee', 'consultation_id', 'id');
+    }
 }

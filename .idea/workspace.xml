@@ -2,71 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b97f94e5-c5a8-4a06-932c-0aa3aec8e65e" name="Default Changelist" comment="Added ajax requests for deleting data.">
-      <change afterPath="$PROJECT_DIR$/app/Consultation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Enrollment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ConsultationsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/EnrollmentsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Room.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/RoomFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_02_105705_create_enrollments_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_02_150544_create_rooms_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_02_151037_create_consultations_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/RoomSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/font-awesome/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/font-awesome/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/font-awesome/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/font-awesome/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/font-awesome/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_custom.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/consultations/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/consultations/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/consultations/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/enrollments/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/enrollments/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/enrollments/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AttendeesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfessorsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfessorsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StudentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StudentsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SubjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SubjectsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Appearance.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Attendee.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Consultation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Consultation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ConsultationsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ConsultationsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_03_153353_create_appearances_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_03_154203_create_attendees_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/professors/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/professors/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/professors/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/professors/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/professors/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/professors/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/students/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/students/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/students/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/subjects/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/subjects/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/subjects/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/subjects/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/subjects/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/subjects/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_custom.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/consultations/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/consultations/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <list id="970d59d6-5fb4-4a35-8e85-842895eec3a2" name="Revert &quot;Added ajax requests for deleting data.&quot;" comment="Revert &quot;Added ajax requests for deleting data.&quot;&#10;&#10;This reverts commit 91cea79d" />
     <option name="SHOW_DIALOG" value="false" />
@@ -274,7 +219,11 @@
       <workItem from="1577989567421" duration="8956000" />
       <workItem from="1578041562170" duration="14341000" />
       <workItem from="1578059499771" duration="12000" />
-      <workItem from="1578059568613" duration="5863000" />
+      <workItem from="1578059568613" duration="10029000" />
+      <workItem from="1578079397700" duration="2250000" />
+      <workItem from="1578158206705" duration="92000" />
+      <workItem from="1578310430927" duration="67000" />
+      <workItem from="1578310684571" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="Added ajax requests for deleting data.">
       <created>1577482933188</created>
@@ -392,20 +341,20 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1032" height="256" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1577366606523" />
-    <state x="456" y="188" key="SettingsEditor" timestamp="1577956365308">
+    <state x="456" y="188" key="SettingsEditor" timestamp="1578310438907">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="456" y="188" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1577956365308" />
-    <state x="905" y="286" key="SettingsEditor/0.27.2560.1413@0.27.2560.1413" timestamp="1577388963345" />
+    <state x="456" y="188" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1578310438907" />
+    <state x="905" y="286" key="SettingsEditor/0.27.2560.1413@0.27.2560.1413" timestamp="1578079969972" />
     <state x="875" y="469" width="800" height="526" key="Vcs.Push.Dialog.v2" timestamp="1577483469022">
       <screen x="0" y="27" width="2560" height="1413" />
     </state>
     <state x="875" y="469" width="800" height="526" key="Vcs.Push.Dialog.v2/0.27.2560.1413@0.27.2560.1413" timestamp="1577483469022" />
-    <state x="1035" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1578059499822">
+    <state x="1035" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1578310685074">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="1035" y="380" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1578059499822" />
-    <state x="1380" y="501" key="com.intellij.ide.util.TipDialog/0.27.2560.1413@0.27.2560.1413" timestamp="1577989710823" />
+    <state x="1035" y="380" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1578310685074" />
+    <state x="1380" y="501" key="com.intellij.ide.util.TipDialog/0.27.2560.1413@0.27.2560.1413" timestamp="1578158206701" />
     <state x="1063" y="653" width="424" height="158" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577490699850">
       <screen x="0" y="27" width="2560" height="1413" />
     </state>
@@ -418,11 +367,11 @@
       <screen x="0" y="27" width="2560" height="1413" />
     </state>
     <state x="944" y="344" key="run.anything.popup/0.27.2560.1413@0.27.2560.1413" timestamp="1577994727117" />
-    <state x="624" y="200" width="672" height="676" key="search.everywhere.popup" timestamp="1578065234690">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="832" y="259" width="896" height="908" key="search.everywhere.popup" timestamp="1578080894102">
+      <screen x="0" y="27" width="2560" height="1413" />
     </state>
-    <state x="624" y="200" width="672" height="676" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1578065234690" />
-    <state x="832" y="259" width="896" height="908" key="search.everywhere.popup/0.27.2560.1413@0.27.2560.1413" timestamp="1577998097048" />
+    <state x="624" y="200" width="672" height="676" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1578066464856" />
+    <state x="832" y="259" width="896" height="908" key="search.everywhere.popup/0.27.2560.1413@0.27.2560.1413" timestamp="1578080894102" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

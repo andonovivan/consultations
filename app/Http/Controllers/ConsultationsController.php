@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Attendee;
 use App\Consultation;
 use App\Professor;
 use App\Room;
